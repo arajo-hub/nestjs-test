@@ -21,7 +21,8 @@ import {Post} from "../post/entities/Post.entity";
           password: process.env.DB_PASS,
           database: process.env.DB_DATABASE,
           entities: [Post],
-          synchronize: true
+          synchronize: true,
+          logging: true
       }),
       PostModule // 컨트롤러 등록한 모듈을 여기에도 등록해야함
   ],

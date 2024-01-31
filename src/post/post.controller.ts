@@ -19,4 +19,9 @@ export class PostController { //export는 이 클래스를 다른 파일에서�
         return this.postService.savePost(savePostRequestDto);
     }
 
+    @Post('/transaction')
+    async transaction(): Promise<void> {
+        this.postService.transaction();
+    }
+
 }
